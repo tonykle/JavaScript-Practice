@@ -1,2 +1,2 @@
-# JavaScript-Practice
-Trivial JS code I have written over the last few months to solidify my understanding of fundamental JS concepts.
+# JavaScript Practice
+JS code I have written over the last few months to solidify my understanding of fundamental JS concepts. I wrote most of these fairly quickly in order to experiment with JS and to better understand the language's quirks. I attempted to cover core JS concepts such as: prototypes, classes/objects, closure, currying, hoisting, 'this', and others. The vast majority of the implementations are trivial in nature.
