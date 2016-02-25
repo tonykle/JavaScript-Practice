@@ -1,7 +1,8 @@
+'use strict';
+
 // 'FLATTEN' array (array may contain sub-arrays, undefined, null values)
 // one of the key ideas is to use a for-each loop (over a traditional for-loop) because the array grows as you encounter
 // sub-arrays, and you need to be sure to iterate over it entirely
-'use strict';
 
 function flatten(data) {
   let currIndex = 0;

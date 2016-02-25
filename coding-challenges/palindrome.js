@@ -1,8 +1,9 @@
 // Write a simple function (less than 80 characters) that returns a boolean indicating
 // whether or not a string is a palindrome.
+'use strict';
 
 function isPalindrome(str) {
-  for (var i = 0; i < str.length; i++) {
+  for (let i = 0; i < str.length; i++) {
     if (str.charAt(i) !== str.charAt(str.length - i - 1)) {
       return false;
     }

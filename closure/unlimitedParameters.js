@@ -2,15 +2,20 @@
 
 function addition(a) {
   return function(b) {
-    if (a % 1 === 0) {
-
+    if (b % 1 === 0) {
+    //  console.log(a);
+      return addition(a);
     } else {
-      return applyFn.prototype.sum;
+      return addition.prototype.sum;
     }
   }
 }
 
+function add() {
+  return;
+}
+
 addition.prototype.sum = 0;
 
-var answ = addition(1)(2)(8)(4);
+var answ = addition(add)(1)(2);
 console.log(answ); // 15

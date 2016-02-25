@@ -1,7 +1,8 @@
+'use strict';
 // Write a simple function to tell whether 2 is passed as parameter or not
 
 function checkParams() {
-  for (var x of arguments) {
+  for (let x of arguments) {
     if (x === 2) {
       console.log('2 IS IN HERE');
       return;

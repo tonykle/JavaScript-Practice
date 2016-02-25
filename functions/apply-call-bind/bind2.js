@@ -30,7 +30,6 @@ class Honda extends Car{
 var newCar = new Car('orange', 1999, 20);
 var civic = new Honda('red', 1990, 'civic');
 
-// var civicUseCar = newCar.getInfo.bind(civic);
-// civicUseCar(); // should use Car's getInfo() function with the context of civic/honda
-
-civic.getInfo();
+var newCarInfo = newCar.getInfo(); // calling getInfo() with default context
+var civicUseCar = newCar.getInfo.bind(civic); // calling getInfo() with the context of the Honda instance (civic)
+civicUseCar(); // uses Car's getInfo() function with the context of the Honda instance

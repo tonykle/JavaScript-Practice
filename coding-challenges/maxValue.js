@@ -8,7 +8,7 @@ function findMaxTrivial(data) {
   let max;
   if (data.length) {
     max = data[0];
-    for (var i = 0; i < data.length; i++) {
+    for (let i = 0; i < data.length; i++) {
       max = (data[i] > max) ? data[i] : max;
     }
   }
