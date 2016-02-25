@@ -1,14 +1,13 @@
 'use strict';
 
-var numb;
-numb = 1;
+var numb = 1;
 
 // IIFE
 var getValue = (function(x) {
   return numb;
 })(numb);
 
-// NO IFFE
+// NO IIFE
 var getValue2 = function() {
   return numb;
 };

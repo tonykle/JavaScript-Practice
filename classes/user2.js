@@ -9,7 +9,7 @@ User.prototype.getEmail = function() {
 
 User.prototype.setPassword = function(pass) {
   password = pass;
-  return this;
+  return this; // for chaining
 }
 
 User.prototype.authenticate = function(pass) {
