@@ -1,7 +1,12 @@
 'use strict';
 // Fibonacci sequence as defined: 0, 1, 1, 2, 3, 5, 8, 13, 21
 
-// recurive solution, run-time: O(2^n)
+/**
+* returns the nth fibonacci sequence (recursive solution)
+*
+* @param {Integer} seq
+* @return {Integer}
+*/
 function fibonacci(seq) {
   if (seq <= 2) {
     return 1;
@@ -9,7 +14,12 @@ function fibonacci(seq) {
   return fibonacci(seq - 1) + fibonacci(seq - 2);
 }
 
-// iterative solution
+/**
+* returns the nth fibonacci sequence (iterative solution)
+*
+* @param {Integer} seq
+* @return {Integer}
+*/
 function fibonacci2(seq) {
   if (seq === 0 || seq === 1) {
     return seq;

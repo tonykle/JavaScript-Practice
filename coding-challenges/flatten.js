@@ -4,6 +4,12 @@
 // one of the key ideas is to use a for-each loop (over a traditional for-loop) because the array grows as you encounter
 // sub-arrays, and you need to be sure to iterate over it entirely
 
+/**
+* "flattens" an input array
+*
+* @param {Array} data
+* @return {Array}
+*/
 function flatten(data) {
   let currIndex = 0;
   data.forEach(x => {

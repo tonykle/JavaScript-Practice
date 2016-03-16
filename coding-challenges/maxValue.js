@@ -3,7 +3,12 @@
 Write it in the most idiomatic Javascript way possible */
 
 
-// TRIVIAL SOLUTION
+/**
+* trivial solution to finding the max value in an array
+*
+* @param {Array} data
+* @return {Integer}
+*/
 function findMaxTrivial(data) {
   let max;
   if (data.length) {
@@ -15,7 +20,12 @@ function findMaxTrivial(data) {
   return max;
 }
 
-// Better solution
+/**
+* better way to finding the max value in an array
+*
+* @param {Array} data
+* @return {Integer}
+*/
 function findMax(data) {
   return Math.max.apply(null, data);
 }

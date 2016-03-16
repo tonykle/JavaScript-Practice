@@ -26,6 +26,7 @@ class Car {
     this.args[prop] = null;
   }
 
+  // prints KEY : VAL pairs of Object
   printDetails() {
     for (let i in this.args) {
       console.log(i + " = " + this.args[i]);

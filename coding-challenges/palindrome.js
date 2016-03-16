@@ -2,7 +2,13 @@
 // whether or not a string is a palindrome.
 'use strict';
 
-function isPalindrome(str) {
+/**
+* returns true if the input string is a palindrome, false otherwise
+*
+* @param {String} data
+* @return {Boolean}
+*/
+function isPalindrome(data) {
   for (let i = 0; i < str.length; i++) {
     if (str.charAt(i) !== str.charAt(str.length - i - 1)) {
       return false;
