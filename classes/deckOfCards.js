@@ -60,7 +60,7 @@ class Hand extends Deck {
   * @param {Integer} card
   */
   add(card) {
-    if (this.cards.length < 12) {
+    if (this.cards.length < this.limit) {
       this.cards.push(card);
     } else {
       console.log('You cannot add another card to your hand.');
@@ -96,7 +96,7 @@ class Hand extends Deck {
 }
 
 let cards = [];
-for (let i = 0;  i < 2; i++) {
+for (let i = 0;  i < 52; i++) {
   cards[i] = i + 1;
 }
 var currDeck = new Deck(cards);
