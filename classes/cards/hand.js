@@ -1,6 +1,6 @@
 'use strict';
 
-var Deck = require('./deck.js')
+var Deck = require('./deck.js');
 
 class Hand extends Deck.DeckF {
   constructor(cards, limit) {

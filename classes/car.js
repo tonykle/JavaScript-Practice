@@ -4,6 +4,7 @@
 class Car {
   constructor(args) {
     this.args = args;
+
   }
 
   // returns value of class property
@@ -16,9 +17,9 @@ class Car {
     this.args[prop] = val;
   }
 
-  // checks if property of class has a value
+  // checks if property of class exists
   has(prop) {
-    return (this.args[prop] != null && this.args[prop] != undefined);
+    return (this.args.hasOwnProperty(prop));
   }
 
   // sets property of class to null
@@ -35,6 +36,7 @@ class Car {
 }
 
 var Acura = new Car({brand : 'Acura', year : 1999, color : 'white'});
+Acura.printDetails();
 console.log(Acura.get('brand')); // should log Acura
 Acura.set('wheels', 20);
 console.log(Acura.get('wheels')); // should log 20
@@ -46,3 +48,7 @@ if (Acura.has('color')) {
 Acura.unset('year');
 console.log(Acura.year); // should be undefined
 Acura.printDetails(); // should log: brand = Acura, year = null, color = white, wheels = 20
+
+if (Acura.has('brand')) {
+  console.log('woo');
+}
