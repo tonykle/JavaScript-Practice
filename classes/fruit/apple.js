@@ -1,10 +1,12 @@
+/* jshint node: true */
+/* jshint esversion: 6 */
 'use strict';
 
 class Apple {
   constructor(color, type, size) {
-    this.color = color,
-    this.type = 'whatever',
-    this.size = size
+    this.color = color;
+    this.type = 'whatever';
+    this.size = size;
   }
 
   getInfo() {

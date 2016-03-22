@@ -12,7 +12,7 @@ var User = function(currEmail) {
   this.authenticate = function(pass) {
     return pass == password;
   };
-}
+};
 
 var newUser = new User("tonyl3@uw.edu");
 var userEmail = newUser.setPassword("pass").getEmail(); // chaining

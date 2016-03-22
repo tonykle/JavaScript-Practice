@@ -1,3 +1,5 @@
+/* jshint node: true */
+/* jshint esversion: 6 */
 'use strict';
 
 var Deck = require('./deck.js');

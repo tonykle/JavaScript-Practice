@@ -1,10 +1,12 @@
+/* jshint node: true */
+/* jshint esversion: 6 */
+
 'use strict';
 
 // === My awesome car class ===
 class Car {
   constructor(args) {
     this.args = args;
-
   }
 
   // returns value of class property

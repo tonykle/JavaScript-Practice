@@ -1,15 +1,17 @@
+/* jshint node: true */
+/* jshint esversion: 6 */
 'use strict';
 
 class House {
   constructor(color, rooms, people, location) {
-    this.color = color,
-    this.rooms = rooms,
-    this.people = people,
-    this.location = location
+    this.color = color;
+    this.rooms = rooms;
+    this.people = people;
+    this.location = location;
   }
 
   computeRatio() {
-    let ratio = this.rooms / this.people
+    let ratio = this.rooms / this.people;
     console.log(`The ratio of rooms to people for this household is ${ratio}.`);
   }
 

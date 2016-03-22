@@ -1,0 +1,30 @@
+{
+  "name": "javascript-practice",
+  "version": "1.0.0",
+  "description": "Core JavaScript Practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonykle/JavaScript-Practice.git"
+  },
+  "keywords": [
+    "javascript",
+    "js",
+    "core",
+    "learning"
+  ],
+  "author": "Tony Le",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonykle/JavaScript-Practice/issues"
+  },
+  "homepage": "https://github.com/tonykle/JavaScript-Practice#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
