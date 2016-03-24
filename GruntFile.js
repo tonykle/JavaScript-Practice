@@ -3,12 +3,15 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     watch: {
       scripts: {
-        files: ['classes/*.js'],
+        files: ['<%= jshint.files %>'],
         tasks: ['jshint'],
       }
     },
     jshint: {
       files: ['classes/*.js'],
+      options: {
+        console: true
+      }
     }
   });
 

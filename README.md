@@ -1,5 +1,5 @@
 # JavaScript Practice
-This repository contains JS code I have written over the last few months to solidify my understanding of fundamental JS concepts. I wrote most of these files in order to experiment with JS and to better understand the language's quirks. I attempted to cover core JS concepts such as: prototypes, classes/objects, closure, currying, hoisting, 'this', and others. The vast majority of the implementations are trivial in nature.
+This repository contains JS code I have written over the last few months to solidify my understanding of fundamental JS concepts. I wrote most of these files in order to experiment with JS and to better understand the language's quirks. I attempted to cover core JS concepts such as: prototypes, classes/objects, closure, currying, hoisting, 'this', and others. The vast majority of the implementations are trivial in nature. I used Grunt as my task-runner for this project. 
 
 ## Try it out yourself!
 
