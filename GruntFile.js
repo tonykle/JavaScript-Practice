@@ -5,10 +5,10 @@ module.exports = function(grunt) {
       scripts: {
         files: ['<%= jshint.files %>'],
         tasks: ['jshint'],
-      }
+      },
     },
     jshint: {
-      files: ['classes/*.js'],
+      files: ['public/js/classes/*.js'],
       options: {
         console: true
       }
@@ -17,5 +17,6 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+
   grunt.registerTask('default', ['watch']);
 };
