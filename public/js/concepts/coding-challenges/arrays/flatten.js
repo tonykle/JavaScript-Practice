@@ -25,6 +25,3 @@ function flatten(data) {
   });
   return data;
 }
-
-var res = flatten([3, 2, [5, 6, 7], 9, "", null, ['haha1', 'haha2', 'haha3'], undefined, 'haha']); // should become size of 13
-console.log(res); // should output the 'flattened' array

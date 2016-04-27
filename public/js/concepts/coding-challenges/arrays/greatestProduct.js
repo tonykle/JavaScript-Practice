@@ -23,10 +23,3 @@ function greatestProduct(numbs) {
   }
   return answ;
 }
-
-var firstProd = greatestProduct([1, 2, 3, 4, 5, 6]);
-var secProd = greatestProduct([8, 9, 12, 1, 2, -1, 5, -3, -20, 2]);
-var thirdProd = greatestProduct([]);
-console.log(firstProd); // should return [5, 6]
-console.log(secProd); // should log [9, 12]
-console.log(thirdProd); // should log []

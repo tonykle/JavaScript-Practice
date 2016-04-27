@@ -29,5 +29,3 @@ function findMaxTrivial(data) {
 function findMax(data) {
   return Math.max.apply(null, data);
 }
-
-console.log(findMax([9, 10, 1, 100, 13, 90])); // should print 100
