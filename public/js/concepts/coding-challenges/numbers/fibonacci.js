@@ -30,4 +30,3 @@ function fibonacci2(seq) {
   }
   return arr[arr.length - 1];
 }
-console.log(fibonacci2(9)); // outputs: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34

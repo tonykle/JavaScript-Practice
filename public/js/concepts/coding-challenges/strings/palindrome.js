@@ -9,15 +9,13 @@
 * @return {Boolean}
 */
 function isPalindrome(data) {
-  for (let i = 0; i < str.length / 2; i++) {
-    if (str.charAt(i) !== str.charAt(str.length - i - 1)) {
+  if (typeof data !== 'string') {
+    return null;
+  }
+  for (let i = 0; i < data.length / 2; i++) {
+    if (data.charAt(i) !== data.charAt(data.length - i - 1)) {
       return false;
     }
   }
   return true;
 }
-
-var answ = isPalindrome('oolloo');
-var answ2 = isPalindrome('ookpoo');
-console.log(answ); // should log true
-console.log(answ2); // should log false

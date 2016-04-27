@@ -1,8 +1,9 @@
-// If i have a var str = 'hello world', how could i get str.reverse() return 'dlrow olleh'?
-
-String.prototype.reverse = function() {
-  return this.split('').reverse().join('');
+/**
+* takes a string as input and returns it reversed
+*
+* @param {String} str
+* @return {String}
+*/
+function reverseString(str) {
+  return str.split('').reverse().join('');
 }
-
-var str = 'hello world';
-console.log(str.reverse()); // should output 'dlrow olleh'
