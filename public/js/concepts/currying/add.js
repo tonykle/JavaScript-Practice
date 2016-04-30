@@ -6,7 +6,7 @@ function applyFn(func) {
   if (func.name === "add") {
     return function(a) {
       return function(b) {
-        return a + b;
+        return add(a, b);
       }
     }
   }

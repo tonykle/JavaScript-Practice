@@ -46,4 +46,4 @@ class Deck {
   }
 }
 
-module.exports.DeckF = Deck;
+module.exports.Deck = Deck;

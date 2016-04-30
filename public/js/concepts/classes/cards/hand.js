@@ -2,9 +2,9 @@
 /* jshint esversion: 6 */
 'use strict';
 
-var Deck = require('./deck.js');
+var Deck = require('./deck.js').Deck;
 
-class Hand extends Deck.DeckF {
+class Hand extends Deck {
   constructor(cards, limit) {
     super(cards);
     this.limit = limit; // max number of cards a player can have at one moment
