@@ -1,3 +1,5 @@
+'use strict';
+
 var person = {
   firstName: "Penelope",
   lastName: "Barrymore",

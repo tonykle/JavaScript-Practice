@@ -1,5 +1,4 @@
 'use strict';
-// function checks and sees if the array contains any duplicates
 
 /**
 * returns true if array contains any duplicates, false otherwise
@@ -8,11 +7,13 @@
 * @return {Boolean}
 */
 function containsDuplicate(nums) {
-    for (let i = 0; i < nums.length; i++) {
-        let currVal = nums[i];
-        nums.splice(i, 1);
-        if (nums.indexOf(currVal) > -1) {
+    var storage = new Map();
+    for (var i = 0; i < nums.length; i++) {
+        var currNumb = nums[i];
+        if (storage.has(currNumb)) {
             return true;
+        } else {
+            storage.set(currNumb, 1);
         }
     }
     return false;

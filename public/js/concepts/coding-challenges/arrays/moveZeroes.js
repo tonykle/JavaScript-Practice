@@ -1,12 +1,17 @@
 'use strict';
 
 /**
-* Moves all zeroes to the end of the array.
+* Moves all zeroes to the end of the array
 *
 * @param {Array} nums
 */
-var moveZeroes = function(nums) {
-
+function moveZeroes(nums) {
+    let zeroCount = 0;
+    while (nums.indexOf(0) > -1) {
+        zeroCount++;
+        nums.splice(nums.indexOf(0), 1);
+    }
+    for (var j = 0; j < zeroCount; j++) {
+        nums.push(0);
+    }
 };
-
-moveZeroes([0, 0, 0, 3, 12]); // [1, 3, 12, 0, 0]

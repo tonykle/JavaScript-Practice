@@ -17,10 +17,4 @@ function findTwoSum(sum, data) {
     }
   }
   return occur === 1;
-
 }
-
-var first = findTwoSum(20, [10, 0, 10, 10]); // should print false
-var second = findTwoSum(20, [10, 0, 0, 10]); // should print true
-console.log(first);
-console.log(second);
