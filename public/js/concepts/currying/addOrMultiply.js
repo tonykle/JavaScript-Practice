@@ -10,9 +10,9 @@ function applyFn(funcName) {
   return function(first) {
     return function(second) {
       if (funcName.name === 'add') {
-        return first + second;
+        return add(first, second);
       } else if (funcName.name === 'multiply') {
-        return first * second;
+        return multiply(first, second);
       }
     }
   }

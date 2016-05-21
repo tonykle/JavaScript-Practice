@@ -1,3 +1,4 @@
+// solving printing issue with IIFE
 var data = ['a', 'b', 'c', 'd'];
 
 (function() {

@@ -4,6 +4,12 @@
 * Iterates pre-order through a given input tree, and returns the result
 * Treats array as a stack
 *
+* Definition for a binary tree node:
+* function TreeNode(val) {
+*     this.val = val;
+*     this.left = this.right = null;
+* }
+*
 * @param {TreeNode} root
 * @return {Array}
 */

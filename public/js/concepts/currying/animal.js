@@ -1,4 +1,4 @@
-// CURRY EXAMPLE
+// MOST BASIC CURRY EXAMPLE
 function animal(species) {
   return function gender(gType) {
     console.log('species : ' + species + ' / gender: ' + gType);

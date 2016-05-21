@@ -1,11 +1,15 @@
+'use strict';
+
 function addOrMultiply(func) {
   return function(x) {
     return function(y) {
       return function(z) {
         if (func.name === 'add') {
-          console.log(x + y + z);
+          let first = add(x, y);
+          console.log(add(first, z));
         } else if (func.name === 'multiply') {
-          console.log(x * y * z);
+          let first = multiply(x, y);
+          console.log(multiply(first, z));
         }
       }
     }

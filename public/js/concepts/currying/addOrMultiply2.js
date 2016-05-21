@@ -13,9 +13,9 @@ function applyFn(func) {
   funcType = func.name;
   return function(x) {
     if (funcType === 'multiply') {
-      applyFn.prototype.sum *= x;
+      applyFn.prototype.sum = multiply(applyFn.prototype.sum, x);
     } else if (funcType === 'add') {
-      applyFn.prototype.sum += x;
+      applyFn.prototype.sum = add(applyFn.prototype.sum, x);
     }
     return applyFn(func);
   }

@@ -1,3 +1,3 @@
 (function(x, t) {
   console.log(x + t);
-})(20, 30);
+})(20, 30); // 50
